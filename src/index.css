@@ -1,0 +1,70 @@
+#header-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  background-color: #ff6600;
+}
+#nav-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-bar {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#logo-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+#login-area a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.first-bar li {
+  list-style: none;
+  padding: 1rem;
+  color: antiquewhite;
+}
+.first-bar li a,
+#login-area a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+#logo-area p {
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#login-area {
+  padding-left: 300px;
+}
+.first-bar li::after {
+  content: "|";
+  padding-left: 22px;
+}
+.first-bar li:last-child::after {
+  content: none;
+}
