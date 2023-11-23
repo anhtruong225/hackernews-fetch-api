@@ -36,8 +36,12 @@ function App() {
   return (
     <>
       <Navigation />
-      <section className="section">
-        <form autoComplete="off" onSubmit={handleSubmit}>
+      <div className="section">
+        <form
+          autoComplete="off"
+          onSubmit={handleSubmit}
+          className="section-search"
+        >
           <input
             type="text"
             name="search"
@@ -62,7 +66,7 @@ function App() {
 
             <div className="cards">
               {items.map(({ author, created_at, title, url, objectId }) => (
-                <div key={objectId}>
+                <div key={objectId} className="cards-details">
                   <h2>{title}</h2>
                   <div>
                     <div>
@@ -80,7 +84,37 @@ function App() {
             </div>
           </>
         )}
-      </section>
+      </div>
+      <footer>
+        <div>
+          <ul className="footer-menu">
+            <li>
+              <a href="#">Guidelines</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Lists</a>
+            </li>
+            <li>
+              <a href="#">API</a>
+            </li>
+            <li>
+              <a href="#">Secruity</a>
+            </li>
+            <li>
+              <a href="#">Legal</a>
+            </li>
+            <li>
+              <a href="#">Apply to YC</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </>
   );
 }

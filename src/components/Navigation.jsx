@@ -1,4 +1,13 @@
 function Navigation() {
+  function fullDate() {
+    const currentDate = new Date();
+    const month = currentDate.getMonth() + 1;
+    const day = currentDate.getDate();
+    const year = currentDate.getFullYear();
+    const fullDate = day + "/" + month + "/" + year;
+    return fullDate;
+  }
+
   return (
     <>
       <nav>
@@ -16,35 +25,17 @@ function Navigation() {
             <div className="navi-bar">
               <ul className="first-bar">
                 <li>
-                  <a href="#">new</a>
+                  <a href="/">home</a>
                 </li>
                 <li>
-                  <a href="#">past</a>
-                </li>
-                <li>
-                  <a href="#">comments</a>
-                </li>
-                <li>
-                  <a href="#">ask</a>
-                </li>
-                <li>
-                  <a href="#">show</a>
-                </li>
-                <li>
-                  <a href="#">jobs</a>
-                </li>
-                <li>
-                  <a href="#">submit</a>
+                  <a href="/">comments</a>
                 </li>
                 <li>
                   <div id="updated-date" />
-                  DATE
+                  {fullDate()}
                 </li>
               </ul>
             </div>
-          </div>
-          <div id="login-area">
-            <a href="#">login</a>
           </div>
         </div>
       </nav>
