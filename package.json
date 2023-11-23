@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "esbuild": "^0.19.7",
+    "lodash": "^4.17.21",
+    "moments": "^0.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0"
