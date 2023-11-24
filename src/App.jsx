@@ -15,7 +15,7 @@ function App() {
 
     const fetchArticles = async () => {
       const res = await fetch(
-        `http://hn.algolia.com/api/v1/search?query=${query}`
+        `https://hn.algolia.com/api/v1/search?query=${query}`
       );
       const data = await res.json();
       setItems(data.hits);
